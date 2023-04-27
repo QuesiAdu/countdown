@@ -23,25 +23,28 @@ body {
   background-position:center;
 }
 
-.container {
-  padding:4rem;  
+.container { 
   position: relative;
   margin: auto;
   overflow: hidden;
   width: 650px;
   height: 100%
-  z-index:-1;
+  
 }
-img{
-height:50px;
-display:inline-block;
-text-align:center;
+a{
+  font-family: Montserrat;
+  text-align: center;
+  margin-top: 1em;
+  display:inline-block;
+ 
+  height:4em !important;
 }
+
 
 h1 {
   font-family: Montserrat;
   text-align: center;
-  margin-top: 1em;
+  
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -66,24 +69,22 @@ h1 {
 }
 
 .days {
-  
+  background:#FFFFFF;
 }
 
 .hours {
 
- 
+  background:#FFFFFF;
 }
 
 .minutes {
- 
+  background:#FFFFFF;
  
 }
 
 .seconds {
-
-  .numbers {
-   
-  }
+  background:#FFFFFF;
+  
 }
 
 .numbers {

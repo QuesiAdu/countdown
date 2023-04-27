@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Buscar APP</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
-        <img src="logo.png"alt="">
+        <a href="">
+            <img src="logo.png"alt="">
+        </a>
         <h1>Going Live</h1>
-
+        <h1>in</h1>
         <div id="timer"></div>
         
     </div>
@@ -22,8 +25,8 @@
     </footer>
     <script>
         const year = new Date().getFullYear();
-const fourthOfJuly = new Date(year, 6,4).getTime();
-const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
+const letDate = new Date(year, 5,3).getTime();
+// const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
 const month = new Date().getMonth();
 
 // countdown
@@ -34,11 +37,12 @@ let timer = setInterval(function() {
 
   // get the difference
   let diff;
-  if(month > 6) {
-    diff = fourthOfJulyNextYear - today;
-  } else {
-    diff = fourthOfJuly - today;
-  }
+  diff = letDate - today;
+//   if(month > 6) {
+//     diff = fourthOfJulyNextYear - today;
+//   } else {
+//     diff = fourthOfJuly - today;
+//   }
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
