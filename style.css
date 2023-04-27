@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+
+$red: #EF2F3C;
+$white: #F6F4F3;
+$blue: #276FBF;
+$dark: #183059;
+$yellow: #F0A202;
+
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background: #183059;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+
+h1 {
+  font-family: $font;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #F6F4F3;
+}
+
+#timer {
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: .7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #F6F4F3;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background:  #F0A202;
+  .numbers {
+   
+  }
+}
+
+.numbers {
+  font-family: $big;
+  color: #183059;
+  font-size: 4em;
+}
+
+.white {
+  position: absolute;
+  background: #F6F4F3;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+  .triangle {
+    border-bottom: 14px solid #F6F4F3;
+  }
+  .string {
+    background: #F6F4F3;
+    border: 1px solid #F6F4F3;
+  }
+}
+
+.red {
+  position: absolute;
+  background: #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+  .triangle {
+    border-bottom: 14px solid #EF2F3C;
+  }
+  .string {
+    background: #EF2F3C;
+    border: 1px solid #EF2F3C;
+  }
+}
+
+.blue {
+  position: absolute;
+  background: #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+  .triangle {
+    border-bottom: 14px solid #276FBF;
+  }
+  .string {
+    background: #276FBF;
+    border: 1px solid #276FBF;
+  }
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: $font;
+  font-size: 0.7em;
+  p {
+    letter-spacing: 3px;
+    color: #EF2F3C;
+  }
+  a {
+    color: #F6F4F3;
+    text-decoration: none;
+    &:hover {
+      color: #276FBF;
+    }
+  }
+}
